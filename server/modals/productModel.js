@@ -26,7 +26,7 @@ const itemSchema = new mongoose.Schema({
       required: true,
     },
     dateOfSale: {
-      type: Date,
+      type: String,
       required: true,
     },
     price: {
