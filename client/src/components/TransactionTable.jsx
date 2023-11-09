@@ -17,7 +17,7 @@ export default function TransactionTable({
       .get(apiUrl)
       .then((response) => {
       console.log(response.data.transactions);
-        setTransactions(response.data.transactions);
+      
       })
       .catch((error) => {
         console.error('Error fetching transactions:', error);

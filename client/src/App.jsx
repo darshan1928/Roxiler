@@ -3,6 +3,7 @@ import SearchBox from "./components/SearchBox";
 import TransactionTable from "./components/TransactionTable";
 import Pagination from "./components/Pagination";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function App() {
   const [searchText, setSearchText] = useState("");
@@ -11,9 +12,16 @@ export default function App() {
   const [selectedMonth, setSelectedMonth] = useState('March');
 
   useEffect(() => {
-    // Fetch data from your transactions API based on selectedMonth and searchText
-    // Update the transactions state with the retrieved data
-  }, [searchText, currentPage]);
+    axios.get('http://localhost:8888/initialize-transaction') 
+    .then((response) => {
+      console.log(response.data);
+     setTransactions(response.data.transactions)
+    })
+    .catch((error) => {
+      console.error(error);
+    
+    });
+  }, []);
 
   return (
     <div className="bg-black text-white min-h-screen">
