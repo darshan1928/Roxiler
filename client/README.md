@@ -1,8 +1,18 @@
-# React + Vite
+<h1>MERN Stack Coding Challenge</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Introduction</h2>
+<p>Created API to initialize the database. fetch the JSON from the third party API and
+initialize the database with seed data.</p>
+<h2>Third Party Url</h2>
+https://s3.amazonaws.com/roxiler.com/product_transaction.json
+<h3>Tech Stack</h3>
+<li>React</li>
+<li>TailwindCSS</li>
+<li>Express.js</li>
+<li>Node.js</li>
+<li>MongoDB</li>
 
-Currently, two official plugins are available:
+<h3>Screenshots</h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://github.com/darshan1928/roxiler/blob/main/client/src/assets/Screenshot%20(3).png" />
+<img src="https://github.com/darshan1928/roxiler/blob/main/client/src/assets/Screenshot%20(4).png" />
